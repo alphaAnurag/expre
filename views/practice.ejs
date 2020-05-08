@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            <%=title%>
+        </title>
+        
+    </head>
+    <body>
+        <h1> lets play</h1>
+        <ul>
+            <%for(let i=0;i<10;i++){ %>
+                <li>
+                    <%= i%>
+                </li>
+                <%}%>
+
+        </ul>
+
+        <% for(let i of contact_list){%>
+            <ul>
+                <li>
+                   <p> <%=i.name%></p>
+                   <p> <%=i.age%></p>
+                   <p> <%=i.sex%></p>
+                </li>
+            </ul>
+        <%}%>
+        <% if(true){%>
+            <h1>its true</h1>
+            <%}else{%>
+            <p>it is false</p>
+            <%}%>
+        </body>
+</html>

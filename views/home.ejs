@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> 
+            <%=title%>
+        </title>
+        <link rel="stylesheet" href="/CSS/home.css">
+    </head>
+    <body>
+        <h1>its start with one </h1>
+        <h2> thing I don't know why doesn't even matter how hard you try</h2>
+        <h3>keep that in my mind I design this rthymnpm </h3>
+        <form action="create_contact" method='post'>
+           <p>Name <input type="text" name="name" id="na" placeholder='nmae'required></p>
+           <p>Age <input type='number' name="age" id="ag" required></p>
+            <p>Sex<input type='text' name="sex" id="se" placeholder='M/F' required></p>
+            <button >Add contact</button>
+        </form>
+        <ul>
+            <%for(let i=0;i<10;i++){ %>
+                <li>
+                    <%= i%>
+                </li>
+                <%}%>
+
+        </ul>
+
+        <% for(let i of contact_list){%>
+            <ul>
+                <li>
+                   <p> <%=i.name%></p>
+                   <p> <%=i.age%></p>
+                   <p> <%=i.sex%></p>
+                </li>
+            </ul>
+        <%}%>
+        <% if(true){%>
+            <h1>its true</h1>
+            <%}else{%>
+            <p>it is false</p>
+            <%}%>
+        <script type="text/javascript " src="/JS/home.js"></script>    
+    </body>
+</html>
